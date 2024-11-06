@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FilmeFix - Assista aos Melhores Filmes</title>
+  <style>
+    /* Estilos gerais */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #1b1b1b;
+      color: #ffffff;
+      text-align: center;
+    }
+
+    /* Cabeçalho */
+    header {
+      padding: 20px;
+      background-color: #333;
+      color: #ffcc00;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+
+    /* Grid de Filmes */
+    .catalogo {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    /* Estilo dos cartões de filmes */
+    .filme-card {
+      background-color: #444;
+      border-radius: 8px;
+      width: 320px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .filme-card iframe {
+      width: 100%;
+      height: 180px;
+    }
+
+    .filme-info {
+      padding: 15px;
+    }
+
+    .filme-titulo {
+      font-size: 18px;
+      font-weight: bold;
+      color: #ffcc00;
+      margin: 0 0 10px;
+    }
+
+    .filme-descricao {
+      font-size: 14px;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cabeçalho do Site -->
+  <header>
+    <h1>FilmeFix</h1>
+    <p>Assista aos melhores filmes e trailers aqui!</p>
+  </header>
+
+  <!-- Catálogo de Filmes -->
+  <div class="catalogo">
+
+    <!-- Card do Filme 1 -->
+    <div class="filme-card">
+      <iframe src="https://www.youtube.com/embed/2LqzF5WauAw" title="Trailer de Jurassic World" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="filme-info">
+        <h2 class="filme-titulo">Jurassic World</h2>
+        <p class="filme-descricao">Uma nova aventura no mundo dos dinossauros revive o legado de Jurassic Park.</p>
+      </div>
+    </div>
+
+    <!-- Card do Filme 2 -->
+    <div class="filme-card">
+      <iframe src="https://www.youtube.com/embed/6ZfuNTqbHE8" title="Trailer de Vingadores: Guerra Infinita" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="filme-info">
+        <h2 class="filme-titulo">Vingadores: Guerra Infinita</h2>
+        <p class="filme-descricao">Os Vingadores enfrentam Thanos em uma batalha épica para salvar o universo.</p>
+      </div>
+    </div>
+
+    <!-- Card do Filme 3 -->
+    <div class="filme-card">
+      <iframe src="https://www.youtube.com/embed/YoHD9XEInc0" title="Trailer de A Origem" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="filme-info">
+        <h2 class="filme-titulo">A Origem</h2>
+        <p class="filme-descricao">Dom Cobb é um ladrão com a habilidade de invadir sonhos e roubar segredos.</p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
